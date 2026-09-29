@@ -1,11 +1,109 @@
+<!--
+    PAGINA PRINCIPAL
+    Sitio web "Estudio de Fotografia" — Grupo 21
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio de Fotografia | Pagina Principal</title>
 
-Página Principal
-Instrucciones: Debe incluir: logo (diseño propio del grupo), menú de navegación con enlaces únicamente a Página Principal, Promociones, Productos y Sucursales; un carrusel con mínimo 7 imágenes de productos o promociones; y las secciones de Misión y Visión.
+    <!-- Bootstrap 4.6.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
 
+    <!-- Logo del sitio, enlaza a la pagina principal -->
+    <div class="text-center mt-4 mb-2">
+        <a href="1-Pagina Principal.html">
+            <img src="imgs/imagen1.png" alt="Logo Estudio de Fotografia" height="80">
+        </a>
+    </div>
 
-Funcionalidad de la Página
-Instrucciones: Explicar cómo funciona el menú de navegación (enlaces hacia las otras 3 páginas), el comportamiento del carrusel (automático/manual, controles o indicadores) y cómo se organizó visualmente la sección de Misión y Visión (columnas, distribución del texto).
+    <!-- Menu de navegacion: enlaces a las 4 paginas del sitio -->
+    <nav class="navbar navbar-expand-sm justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="1-Pagina Principal.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="2-Pagina promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="3-Pagina de listado de productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="4-Pagina de Sucursales.html">Sucursales</a>
+            </li>
+        </ul>
+    </nav>
 
+    <!--
+        Carrusel de imagenes mostrando un minimo de 7 imagenes de productos/promociones.
+    -->
+    <div class="container mt-4">
+        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
 
+            <ul class="carousel-indicators">
+                <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="1"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="2"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="3"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="4"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="5"></li>
+                <li data-target="#carouselPrincipal" data-slide-to="6"></li>
+            </ul>
 
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 1 - producto o promocion">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 2 - producto o promocion">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 3 - producto o promocion">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 4 - producto o promocion">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 5 - producto o promocion">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 6 - producto o promocion">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/imagen1.png" class="d-block w-100" alt="Imagen 7 - producto o promocion">
+                </div>
+            </div>
 
+            <a class="carousel-control-prev" href="#carouselPrincipal" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselPrincipal" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Seccion Mision y Vision, distribuida en dos columnas -->
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>MISION</h4>
+                <p>Texto de la mision del sitio web</p>
+            </div>
+            <div class="col-md-6">
+                <h4>VISION</h4>
+                <p>Texto de la vision del sitio web</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
