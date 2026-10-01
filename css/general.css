@@ -1,0 +1,73 @@
+:root {
+  --azul-principal: #173f5f;
+  --azul-secundario: #20639b;
+  --celeste: #3caea3;
+  --naranja: #f59e0b;
+  --fondo: #f4f7fb;
+  --blanco: #ffffff;
+  --texto: #263238;
+  --texto-secundario: #607d8b;
+  --borde: #dbe3ea;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+  background-color: var(--fondo);
+}
+
+.encabezado {
+  background-color: var(--blanco);
+  border-bottom: 1px solid var(--borde);
+}
+
+.logo {
+  width: auto;
+  max-width: 220px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.menu-principal {
+  background-color: var(--azul-principal);
+}
+
+.menu-principal .nav-link {
+  margin: 0 4px;
+  padding: 13px 18px !important;
+  color: var(--blanco) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.menu-principal .nav-link:hover {
+  color: var(--naranja) !important;
+}
+
+.menu-principal .nav-item.active .nav-link {
+  color: var(--naranja) !important;
+  border-bottom: 3px solid var(--naranja);
+}
+
+.titulo-pagina {
+  color: var(--azul-principal);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.titulo-pagina::after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 4px;
+  background-color: var(--naranja);
+  border-radius: 5px;
+}
+
+.subtitulo-pagina {
+  color: var(--texto-secundario);
+  font-size: 1.1rem;
+}
